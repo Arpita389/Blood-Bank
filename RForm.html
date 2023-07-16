@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Recipient Form</title>
+    <link rel="stylesheet" type="text/css" href="./Rform.css" />
+  </head>
+  <body>
+    <h1>Blood Recipient Form</h1>
+    <form>
+      <h3>Patient Information:</h3>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="blood group">Blood group:</label>
+      <select id="bg" required>
+        <option value="">Select</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+      <label for="hospital">Hospital/Facility:</label>
+      <input type="text" id="hospital" name="hospital" required />
+
+      <label for="ward">Ward/Department:</label>
+      <input type="text" id="ward" name="ward" required />
+
+      <label for="record">Medical Record Number:</label>
+      <input type="text" id="record" name="record" required />
+
+      <!-- Add more fieldsets for other sections -->
+
+      <input type="submit" id="sub" value="Submit" />
+    </form>
+  </body>
+  <script src="RForm.js"></script>
+</html>
